@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> </p>convert celius into farenheit</p>
+    <p> celcius value : <input id="1" onkeyup="convert('c')" placeholder="enter a num"/></p>
+    <p> farenheit value : <input id="2" onkeyup="convert('f')" placeholder="enter a num"/></p>
+    <script>
+        function convert(degree){
+            if (degree == "c"){
+                c=(document.getElementById("1").value*9)/5+32;
+                document.getElementById("2").value=Math.round(c);
+            }
+            else{
+                c=((document.getElementById("2").value-32)*5)/9;
+                document.getElementById("1").value=Math.round(c);
+            }
+        }
+    </script>
+</body>
+</html>

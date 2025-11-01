@@ -1,0 +1,11 @@
+var nodemailer = require ('nodemailer');
+var sender = nodemailer.createTransport({
+    service:'gmail',
+    auth: {
+        user:'salsafil9841268337@gmail.com',
+        pass:'kivwrwzxtrurnajn'
+    }
+});
+function generateOTP(){
+    return Math.floor(1000+ math.random()*9000);
+}
